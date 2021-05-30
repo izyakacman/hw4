@@ -1,5 +1,5 @@
-/**
-*	Модуль фигуры
+п»ї/**
+*	РњРѕРґСѓР»СЊ С„РёРіСѓСЂС‹
 */
 #ifndef SHAPE_H
 #define SHAPE_H
@@ -7,7 +7,7 @@
 #include <iostream>
 
 /**
-*	Абстарктная фигура
+*	РђР±СЃС‚Р°СЂРєС‚РЅР°СЏ С„РёРіСѓСЂР°
 */
 class Shape
 {
@@ -17,13 +17,13 @@ public:
 	virtual ~Shape() = default;
 
 	/**
-	*	Отрисовка фигуры
+	*	РћС‚СЂРёСЃРѕРІРєР° С„РёРіСѓСЂС‹
 	*/
 	virtual void Show() = 0;
 };
 
 /**
-*	Круг
+*	РљСЂСѓРі
 */
 class Circle : public Shape
 {
@@ -36,7 +36,7 @@ public:
 	~Circle() = default;
 
 	/**
-	*	Отрисовка круга
+	*	РћС‚СЂРёСЃРѕРІРєР° РєСЂСѓРіР°
 	*/
 	virtual void Show() override
 	{
@@ -51,7 +51,7 @@ private:
 };
 
 /**
-*	Квадрат
+*	РљРІР°РґСЂР°С‚
 */
 class Square : public Shape
 {
@@ -64,7 +64,7 @@ public:
 	~Square() = default;
 
 	/**
-	*	Отрисовка квадрата
+	*	РћС‚СЂРёСЃРѕРІРєР° РєРІР°РґСЂР°С‚Р°
 	*/
 	virtual void Show() override
 	{
