@@ -10,7 +10,7 @@ add_executable (hw4 "main.cpp"  "controller.cpp" "controller.h" "document.h" "sh
 
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.
 
-install(TARGETS hw2 RUNTIME DESTINATION bin)
+install(TARGETS hw4 RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
