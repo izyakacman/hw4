@@ -20,12 +20,12 @@ public:
 	/**
 	*	Создание нового документа
 	*/
-	bool CreateDoc(std::string name);
+	bool CreateDoc(const std::string& name);
 
 	/**
 	*	Импорт документа из файла
 	*/
-	bool ImportDoc(std::string file_name);
+	bool ImportDoc(const std::string& file_name);
 
 	/**
 	*	Экспорт текущего документа в файл
@@ -85,7 +85,5 @@ private:
 	size_t m_current_doc_index = 0; // индекс документа видимого пользователю
 
 };
-
-extern Controller Ctrl;
 
 #endif 

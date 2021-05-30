@@ -38,7 +38,7 @@ public:
 	/**
 	*	Отрисовка круга
 	*/
-	virtual void Show() override
+	void Show() override
 	{
 		std::cout << "Show circle " << m_center << " " << m_radius << std::endl;
 	}

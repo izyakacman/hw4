@@ -9,12 +9,10 @@
 
 using namespace std;
 
-Controller Ctrl;
-
 /**
 *	Создание нового документа
 */
-bool Controller::CreateDoc(string name)
+bool Controller::CreateDoc(const string& name)
 {
 	try {
 
@@ -35,7 +33,7 @@ bool Controller::CreateDoc(string name)
 /**
 *	Импорт документа из файла
 */
-bool Controller::ImportDoc(string file_name)
+bool Controller::ImportDoc(const string& file_name)
 {
 	try {
 
@@ -136,7 +134,7 @@ bool Controller::IsDocExist(const std::string& name)
 
 	try {
 
-		vector<string> names = Ctrl.GetDocsName();
+		vector<string> names = GetDocsName();
 
 		if (find(names.cbegin(), names.cend(), name) != names.cend())
 			res = true;

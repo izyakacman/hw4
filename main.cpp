@@ -9,6 +9,8 @@
 
 using namespace std;
 
+Controller Ctrl; // контроллер
+
 /**
 *	Интрефейс пользователя
 */
