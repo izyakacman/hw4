@@ -1,5 +1,5 @@
-/**
-*	Модуль контролера
+п»ї/**
+*	РњРѕРґСѓР»СЊ РєРѕРЅС‚СЂРѕР»РµСЂР°
 */
 
 #include <iostream>
@@ -11,13 +11,13 @@ using namespace std;
 Controller Ctrl;
 
 /**
-*	Создание нового документа
+*	РЎРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ РґРѕРєСѓРјРµРЅС‚Р°
 */
 bool Controller::CreateDoc(string name)
 {
 	try {
 
-		// Добавление документа в пул документов
+		// Р”РѕР±Р°РІР»РµРЅРёРµ РґРѕРєСѓРјРµРЅС‚Р° РІ РїСѓР» РґРѕРєСѓРјРµРЅС‚РѕРІ
 
 		m_documents.push_back(make_unique<Document>(name));
 		m_current_doc_index = m_documents.size() - 1;
@@ -32,7 +32,7 @@ bool Controller::CreateDoc(string name)
 }
 
 /**
-*	Импорт документа из файла
+*	РРјРїРѕСЂС‚ РґРѕРєСѓРјРµРЅС‚Р° РёР· С„Р°Р№Р»Р°
 */
 bool Controller::ImportDoc(string file_name)
 {
@@ -41,7 +41,7 @@ bool Controller::ImportDoc(string file_name)
 		cout << "Open file \"" << file_name << "\"\n";
 		cout << "Read document form the file\n";
 
-		// Добавление документа в пул документов
+		// Р”РѕР±Р°РІР»РµРЅРёРµ РґРѕРєСѓРјРµРЅС‚Р° РІ РїСѓР» РґРѕРєСѓРјРµРЅС‚РѕРІ
 
 		m_documents.push_back(make_unique<Document>(file_name));
 		m_current_doc_index = m_documents.size() - 1;
@@ -56,7 +56,7 @@ bool Controller::ImportDoc(string file_name)
 }
 
 /**
-*	Экспорт текущего документа в файл
+*	Р­РєСЃРїРѕСЂС‚ С‚РµРєСѓС‰РµРіРѕ РґРѕРєСѓРјРµРЅС‚Р° РІ С„Р°Р№Р»
 */
 bool Controller::ExportDoc()
 {
@@ -75,7 +75,7 @@ bool Controller::ExportDoc()
 }
 
 /**
-*	Получение списка имен открытых документов
+*	РџРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° РёРјРµРЅ РѕС‚РєСЂС‹С‚С‹С… РґРѕРєСѓРјРµРЅС‚РѕРІ
 */
 std::vector<std::string> Controller::GetDocsName()
 {
@@ -93,7 +93,7 @@ std::vector<std::string> Controller::GetDocsName()
 }
 
 /**
-*	Изменение индекса документа видимого пользователю
+*	РР·РјРµРЅРµРЅРёРµ РёРЅРґРµРєСЃР° РґРѕРєСѓРјРµРЅС‚Р° РІРёРґРёРјРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ
 */
 bool Controller::SetCurrentDocIndex(size_t index)
 {
@@ -108,8 +108,8 @@ bool Controller::SetCurrentDocIndex(size_t index)
 };
 
 /**
-*	Изменение индекса документа видимого пользователю
-*	(по имени докумета)
+*	РР·РјРµРЅРµРЅРёРµ РёРЅРґРµРєСЃР° РґРѕРєСѓРјРµРЅС‚Р° РІРёРґРёРјРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ
+*	(РїРѕ РёРјРµРЅРё РґРѕРєСѓРјРµС‚Р°)
 */
 bool Controller::SetCurrentDocIndex(const std::string& name)
 {
@@ -127,7 +127,7 @@ bool Controller::SetCurrentDocIndex(const std::string& name)
 }
 
 /**
-	Документ с таким именем существует?
+	Р”РѕРєСѓРјРµРЅС‚ СЃ С‚Р°РєРёРј РёРјРµРЅРµРј СЃСѓС‰РµСЃС‚РІСѓРµС‚?
 */
 bool Controller::IsDocExist(const std::string& name)
 {
@@ -146,10 +146,10 @@ bool Controller::IsDocExist(const std::string& name)
 }
 
 
-/* Фигуры */
+/* Р¤РёРіСѓСЂС‹ */
 
 /**
-*	Добавление круга
+*	Р”РѕР±Р°РІР»РµРЅРёРµ РєСЂСѓРіР°
 */
 bool Controller::AddCircle(int center, int radius)
 {
@@ -170,7 +170,7 @@ bool Controller::AddCircle(int center, int radius)
 }
 
 /**
-*	Добавление квадрата
+*	Р”РѕР±Р°РІР»РµРЅРёРµ РєРІР°РґСЂР°С‚Р°
 */
 bool Controller::AddSquare(int top_left, int side)
 {
@@ -191,7 +191,7 @@ bool Controller::AddSquare(int top_left, int side)
 }
 
 /**
-*	Удаление фигуры
+*	РЈРґР°Р»РµРЅРёРµ С„РёРіСѓСЂС‹
 */
 bool Controller::DelShape(int index)
 {
