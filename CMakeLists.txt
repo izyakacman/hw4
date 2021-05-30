@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("hw4")
+project ("hw4" VERSION 0.0.$ENV{GITHUB_RUN_NUMBER})
 
 # Добавьте источник в исполняемый файл этого проекта.
 add_executable (hw4 "main.cpp"  "controller.cpp" "controller.h" "document.h" "shape.h")
